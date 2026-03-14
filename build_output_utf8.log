@@ -1,0 +1,65 @@
+﻿
+> riverwideoceandeep-site@0.0.1 build
+> astro build
+
+[2m22:35:40[22m [34m[vite][39m Re-optimizing dependencies because vite config has changed
+[2m22:35:40[22m [34m[content][39m Syncing content
+[2m22:35:40[22m [34m[content][39m Synced content
+[2m22:35:40[22m [34m[types][39m Generated [2m334ms[22m
+[2m22:35:40[22m [34m[build][39m output: [34m"static"[39m
+[2m22:35:40[22m [34m[build][39m mode: [34m"static"[39m
+[2m22:35:40[22m [34m[build][39m directory: [34mC:\Users\Michael\Projects\riverwideoceandeep-site\dist\[39m
+[2m22:35:40[22m [34m[build][39m Collecting build info...
+[2m22:35:40[22m [34m[build][39m [32mΓ£ô Completed in 352ms.[39m
+[2m22:35:40[22m [34m[build][39m Building static entrypoints...
+[33m[1m22:35:41[22m [WARN] [vite][39m [33m"matchHostname", "matchPathname", "matchPort" and "matchProtocol" are imported from external module "@astrojs/internal-helpers/remote" but never used in "node_modules/astro/dist/assets/utils/index.js".[39m
+[2m22:35:41[22m [34m[vite][39m [32mΓ£ô built in 649ms[39m
+[2m22:35:41[22m [34m[vite][39m [32mΓ£ô built in 6ms[39m
+[2m22:35:41[22m [34m[build][39m Rearranging server assets...
+
+[42m[30m generating static routes [39m[49m
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/about/index.html[22m [2m(+8ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/aboutastro/index.html[22m [2m(+4ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/blog/index.html[22m [2m(+5ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/blog/_drafts/id-108/index.html[22m [2m(+3ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/blog/_drafts/id-163/index.html[22m [2m(+2ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/blog/_drafts/id-68/index.html[22m [2m(+2ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/blog/_drafts/id-70/index.html[22m [2m(+1ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/blog/_drafts/id-72/index.html[22m [2m(+2ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/blog/empyre-quiet-commotion/index.html[22m [2m(+2ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/blog/first-post/index.html[22m [2m(+2ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/blog/freewill/index.html[22m [2m(+2ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/blog/markdown-style-guide/index.html[22m [2m(+2ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/blog/river-wide-ocean-deep/index.html[22m [2m(+1ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/blog/second-post/index.html[22m [2m(+2ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/blog/the-grand-illusion-man-in-the-wilderness/index.html[22m [2m(+2ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/blog/third-post/index.html[22m [2m(+1ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/blog/using-mdx/index.html[22m [2m(+5ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/blog/wish/index.html[22m [2m(+1ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/rss.xml[22m [2m(+15ms)[22m 
+[2m22:35:41[22m   [34mΓö£ΓöÇ[39m [2m/index.html[22m [2m(+3ms)[22m 
+[2m22:35:41[22m [32mΓ£ô Completed in 93ms.
+[39m
+[42m[30m generating optimized images [39m[49m
+[2m22:35:41[22m   [32mΓû╢[39m /_astro/MichaelSchauer_WhereTheRiverMeetsTheOcean.C1IzDF8n_Z2hddBa.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(1/16)[22m
+[2m22:35:41[22m   [32mΓû╢[39m /_astro/blog-placeholder-1.Bx0Zcyzv_Z1v5W1C.webp [2m(reused cache entry)[22m [2m(+1ms)[22m [2m(2/16)[22m
+[2m22:35:41[22m   [32mΓû╢[39m /_astro/blog-placeholder-5.CB3Xi-gp_j9V0O.webp [2m(reused cache entry)[22m [2m(+1ms)[22m [2m(3/16)[22m
+[2m22:35:41[22m   [32mΓû╢[39m /_astro/blog-placeholder-about.BtEdEmGp_2eecaz.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(4/16)[22m
+[2m22:35:41[22m   [32mΓû╢[39m /_astro/blog-placeholder-3.ijrf8Ohr_Z1373cG.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(5/16)[22m
+[2m22:35:41[22m   [32mΓû╢[39m /_astro/blog-placeholder-4.gLBdjEDe_Z15Ss3d.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(6/16)[22m
+[2m22:35:41[22m   [32mΓû╢[39m /_astro/blog-placeholder-2.1WQRLJGH_15TD1q.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(7/16)[22m
+[2m22:35:41[22m   [32mΓû╢[39m /_astro/DrDemento-1024x865.zQWmw4v__OLDOD.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(8/16)[22m
+[2m22:35:41[22m   [32mΓû╢[39m /_astro/Styx_TGI-893x1024.Kf5xAeFX_1rxixu.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(9/16)[22m
+[2m22:35:41[22m   [32mΓû╢[39m /_astro/CassetteRecorder.DaNWoF0N_Z1s01Hh.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(10/16)[22m
+[2m22:35:41[22m   [32mΓû╢[39m /_astro/blog-placeholder-1.Bx0Zcyzv_Z29X6w5.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(11/16)[22m
+[2m22:35:41[22m   [32mΓû╢[39m /_astro/blog-placeholder-5.CB3Xi-gp_Z1y5ehD.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(12/16)[22m
+[2m22:35:41[22m   [32mΓû╢[39m /_astro/blog-placeholder-about.BtEdEmGp_Z2srqQK.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(13/16)[22m
+[2m22:35:41[22m   [32mΓû╢[39m /_astro/blog-placeholder-3.ijrf8Ohr_1S4sd1.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(14/16)[22m
+[2m22:35:41[22m   [32mΓû╢[39m /_astro/blog-placeholder-4.gLBdjEDe_sXP1K.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(15/16)[22m
+[2m22:35:41[22m   [32mΓû╢[39m /_astro/blog-placeholder-2.1WQRLJGH_2ml2Jq.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(16/16)[22m
+[2m22:35:41[22m [32mΓ£ô Completed in 5ms.
+[39m
+[2m22:35:41[22m [34m[build][39m [32mΓ£ô Completed in 888ms.[39m
+[2m22:35:41[22m [34m[@astrojs/sitemap][39m `sitemap-index.xml` created at `dist`
+[2m22:35:41[22m [34m[build][39m 19 page(s) built in [1m1.25s[22m
+[2m22:35:41[22m [34m[build][39m [1mComplete![22m

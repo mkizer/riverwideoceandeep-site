@@ -1,0 +1,62 @@
+﻿
+> riverwideoceandeep-site@0.0.1 build
+> astro build
+
+[2m22:26:51[22m [34m[vite][39m Re-optimizing dependencies because vite config has changed
+[2m22:26:51[22m [34m[content][39m Syncing content
+node.exe : 
+[31m[InvalidContentEntryDataError][39m 
+[1mblog ΓåÆ freewill[22m data does not match 
+collection schema.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" 
+"C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified:    
+ ([31m[InvalidCo...lection schema.:Strin    
+g) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandE   
+ rror
+ 
+
+  **: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "description"
+    ],
+    "message": "[1mdescription[22m: Required"
+  },
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "received": "Invalid Date",
+    "path": [
+      "pubDate"
+    ],
+    "message": "[1mpubDate[22m: Expected 
+type `\"date\"`, received `\"object\"`"
+  }
+]
+
+  [1mHint:[22m
+[33m    See [4mhttps://docs.astro.build/en/gu
+ides/content-collections/[24m for more 
+information on content schemas.[39m
+  [1mError reference:[22m
+    [36m[4mhttps://docs.astro.build/en/refere
+nce/errors/invalid-content-entry-data-error/[2
+4m[39m
+  [1mLocation:[22m
+    [4mC:\Users\Michael\Projects\riverwideocea
+ndeep-site\src\content\blog\freewill\index.md:0
+:0[24m
+  [1mStack trace:[22m
+[2m    at getEntryData (C:\Users\Michael\Proje
+cts\riverwideoceandeep-site\node_modules\astro\
+dist\content\utils.js:123:16)
+    at async eval (C:\Users\Michael\Projects\ri
+verwideoceandeep-site\node_modules\astro\dist\c
+ontent\loaders\glob.js:211:13)[22m

@@ -1,0 +1,28 @@
+// @ts-check
+
+import mdx from '@astrojs/mdx';
+import sitemap from '@astrojs/sitemap';
+import tailwindcss from '@tailwindcss/vite';
+import AutoImport from 'astro-auto-import';
+import { defineConfig } from 'astro/config';
+
+// https://astro.build/config
+export default defineConfig({
+	site: 'https://example.com',
+	trailingSlash: 'always', // Add this to maintain your WordPress SEO links
+	integrations: [
+		AutoImport({
+			imports: [
+				{
+					// This automatically imports YouTube from the library
+					'@astro-community/astro-embed-youtube': ['YouTube']
+				}
+			],
+		}),
+		mdx(),
+		sitemap()
+	],
+	vite: {
+		plugins: [tailwindcss()],
+	},
+});
