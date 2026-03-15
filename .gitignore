@@ -24,3 +24,7 @@ pnpm-debug.log*
 .idea/
 build_output.log
 .wrangler/
+
+.dev.vars*
+!.dev.vars.example
+!.env.example

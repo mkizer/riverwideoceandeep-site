@@ -6,23 +6,31 @@ import tailwindcss from '@tailwindcss/vite';
 import AutoImport from 'astro-auto-import';
 import { defineConfig } from 'astro/config';
 
+import cloudflare from '@astrojs/cloudflare';
+
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.com',
-	trailingSlash: 'always', // Add this to maintain your WordPress SEO links
-	integrations: [
-		AutoImport({
-			imports: [
-				{
-					// This automatically imports YouTube from the library
-					'@astro-community/astro-embed-youtube': ['YouTube']
-				}
-			],
-		}),
-		mdx(),
-		sitemap()
+  site: 'https://example.com',
+
+  // Add this to maintain your WordPress SEO links
+  trailingSlash: 'always',
+
+  integrations: [
+      AutoImport({
+          imports: [
+              {
+                  // This automatically imports YouTube from the library
+                  '@astro-community/astro-embed-youtube': ['YouTube']
+              }
+          ],
+      }),
+      mdx(),
+      sitemap()
 	],
-	vite: {
-		plugins: [tailwindcss()],
+
+  vite: {
+      plugins: [tailwindcss()],
 	},
+
+  adapter: cloudflare(),
 });
