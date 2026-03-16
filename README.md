@@ -1,6 +1,6 @@
 # River Wide Ocean Deep Website
 
-This project is a static site built using [Astro v6](https://astro.build/). It serves as a migration from a previous WordPress site, leveraging modern web development tooling, static site generation, and optimized content delivery.
+This project is a static site built using [Astro v6](https://astro.build/). It is live at [riverwideoceandeep.com](https://riverwideoceandeep.com). It serves as a migration from a previous WordPress site, leveraging modern web development tooling, static site generation, and optimized content delivery.
 
 ## 🚀 Overview & Processes Followed
 
@@ -56,16 +56,35 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Previews your build locally, before deploying.   |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check`.|
 
+## ☁️ Cloudflare Pages & Image Optimization
+
+When deploying to **Cloudflare Pages**, this project uses the `@astrojs/cloudflare` adapter. Please note the following critical configuration for image display:
+
+### The Image Display Issue
+By default, the Cloudflare adapter attempts to use dynamic image transformation bindings. In a static site context, this can cause images to break (resulting in `/_image/?href=...` 404 errors) because the dynamic service is not configured or available.
+
+### The Fix
+To ensure images are correctly optimized at build time and served as static assets, the `astro.config.mjs` is explicitly configured to use the local compilation service:
+
+```javascript
+  adapter: cloudflare({
+      imageService: 'compile',
+  }),
+```
+
+### Build Requirements
+- **Node.js**: Cloudflare Pages must be configured to use **Node.js 22.12.0 or higher**. This is ensured by the `.node-version` and `.nvmrc` files in the repository. This version is required for the `sharp` image optimization library to function correctly in the Astro build process.
+- **Build Cache**: If images appear broken after configuration changes, purge the **Build Cache** in your Cloudflare Pages project settings to ensure a fresh build without stale dependencies.
+
 ## 🚀 Deployment
 
-This site is completely static. To deploy changes:
-1. Ensure your content looks good locally (`npm run dev`).
-2. Run the build command:
-   ```bash
-   npm run build
-   ```
-3. The built files will be output to the `dist/` directory.
-4. Upload or statically host the contents of the `dist/` directory to your web server (e.g., Netlify, Vercel, GitHub Pages, or any standard Apache/Nginx static hosting).
+This site is deployed to **Cloudflare Pages**. 
+
+1. **Automatic Deployment**: Any push to the `main` branch triggers a build and deploy on Cloudflare.
+2. **Build Settings**:
+   - **Framework preset**: `Astro`
+   - **Build command**: `npm run build`
+   - **Build output directory**: `dist`
 
 **Maintenance Notes for Content Management:**
 - To add a new blog post, create a new `.md` or `.mdx` file within the `src/content/blog/` directory.

@@ -10,7 +10,7 @@ import cloudflare from '@astrojs/cloudflare';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://riverwideoceandeep.com',
 
   // Add this to maintain your WordPress SEO links
   trailingSlash: 'always',
