@@ -8,6 +8,10 @@ import HeaderLink from './HeaderLink.astro';
 			<a href="/"><img src="/MichaelSchauer_WhereTheRiverMeetsTheOcean.png" alt="" class="header-logo" /> <i>{SITE_TITLE}</i></a>
 		</h2>
 		<div class="internal-links">
+			<a href="/rss.xml" class="rss-link" aria-label="RSS Feed" title="RSS Feed">
+				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+			</a>
+			<HeaderLink href="/tags/">Tags</HeaderLink>
 			<HeaderLink href="/about/">About</HeaderLink>
 		</div>
 	</nav>
@@ -52,5 +56,16 @@ import HeaderLink from './HeaderLink.astro';
 	}
 	.internal-links {
 		margin-left: auto;
+		display: flex;
+		align-items: center;
+	}
+	.rss-link {
+		display: flex;
+		align-items: center;
+		color: var(--black);
+		padding: 1em 0.5em;
+	}
+	.rss-link:hover {
+		color: var(--accent);
 	}
 </style>

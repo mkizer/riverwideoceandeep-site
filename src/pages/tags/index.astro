@@ -1,0 +1,57 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+const tags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort();
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Tags | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			.tag-cloud {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1rem;
+				justify-content: center;
+				padding: 2rem 0;
+			}
+			.tag {
+				display: inline-block;
+				padding: 0.5rem 1rem;
+				border-radius: 9999px;
+				background-color: rgb(var(--gray-light));
+				color: rgb(var(--black));
+				text-decoration: none;
+				transition: all 0.2s ease-in-out;
+				font-size: 1.1rem;
+			}
+			.tag:hover {
+				background-color: rgb(var(--accent));
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section>
+				<h1 style="text-align: center; margin-bottom: 2rem;">Tags</h1>
+				<div class="tag-cloud">
+					{tags.map((tag) => (
+						<a href={`/tags/${tag}/`} class="tag">{tag}</a>
+					))}
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

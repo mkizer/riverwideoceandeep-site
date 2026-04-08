@@ -19,6 +19,7 @@
     "astro": "^6.0.4",
     "astro-auto-import": "^0.5.1",
     "marked": "^17.0.4",
+    "medium-zoom": "^1.1.0",
     "remark": "^15.0.1",
     "sharp": "^0.34.3",
     "strip-markdown": "^6.0.0",

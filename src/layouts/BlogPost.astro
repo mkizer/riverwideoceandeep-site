@@ -55,6 +55,26 @@ const updatedDate = props.updatedDate ? new Date(props.updatedDate) : undefined;
 			.last-updated-on {
 				font-style: italic;
 			}
+			.tag-list {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5rem;
+				margin-top: 1rem;
+			}
+			.tag {
+				display: inline-block;
+				padding: 0.25rem 0.75rem;
+				border-radius: 9999px;
+				background-color: rgb(var(--gray-light));
+				color: rgb(var(--black));
+				text-decoration: none;
+				transition: all 0.2s ease-in-out;
+				font-size: 0.9rem;
+			}
+			.tag:hover {
+				background-color: rgb(var(--accent));
+				color: white;
+			}
 		</style>
 	</head>
 
@@ -81,9 +101,26 @@ const updatedDate = props.updatedDate ? new Date(props.updatedDate) : undefined;
 						<hr />
 					</div>
 					<slot />
+					{
+						props.tags && props.tags.length > 0 && (
+							<div class="post-tags" style="margin-top: 3rem;">
+								<hr style="margin-bottom: 1rem;" />
+								<h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Tags:</h3>
+								<div class="tag-list" style="margin-top: 0;">
+									{props.tags.map((tag: string) => (
+										<a href={`/tags/${tag}/`} class="tag">{tag}</a>
+									))}
+								</div>
+							</div>
+						)
+					}
 				</div>
 			</article>
 		</main>
 		<Footer />
+		<script>
+			import mediumZoom from 'medium-zoom';
+			mediumZoom('.prose img');
+		</script>
 	</body>
 </html>
