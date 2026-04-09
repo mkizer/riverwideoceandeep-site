@@ -6,6 +6,8 @@ import tailwindcss from '@tailwindcss/vite';
 import AutoImport from 'astro-auto-import';
 import { defineConfig } from 'astro/config';
 
+import cloudflare from '@astrojs/cloudflare';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://riverwideoceandeep.com',
@@ -24,9 +26,11 @@ export default defineConfig({
       }),
       mdx(),
       sitemap()
-	],
+    ],
 
   vite: {
       plugins: [tailwindcss()],
-	}
+    },
+
+  adapter: cloudflare()
 });
